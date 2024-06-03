@@ -4,6 +4,7 @@ import Dropdown from "@/components/Dropdown";
 import data from "../data.json"
 
 export default function Home() {
+
   const handleSelect = (id) => {
     console.log(`Selected item with id ${id}`);
   };
@@ -12,11 +13,9 @@ export default function Home() {
     <main className="flex min-h-screen flex-col items-center justify-center p-24">
       <h1>Multiple Selection Dropdown</h1>
       <Dropdown
-        id="person"
-        title="Select Person"
-        data={data}
-        hasImage
-        onSelect={handleSelect}
+      title="Select Person"
+      data={data}
+      onSelect={handleSelect}
       />
     </main>
   );
